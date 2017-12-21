@@ -1,4 +1,4 @@
-[![Release](https://jitpack.io/v/adrielcafe/KBus.svg)](https://jitpack.io/#adrielcafe/KBus)
+[![Release](https://jitpack.io/v/adrielcafe/KBus.svg)](https://jitpack.io/#adrielcafe/KBus) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-KBus-green.svg?style=flat)]( https://android-arsenal.com/details/1/6583)
 
 # KBus
 Super lightweight (14 LOC) and minimalistic (`post()`, `subscribe()`, `unsubscribe()`) EventBus written with idiomatic Kotlin and RxJava 2

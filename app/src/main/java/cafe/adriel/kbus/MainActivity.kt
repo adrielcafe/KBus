@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        KBus.subscribe<ShowMessageEvent>(this, {
+        KBus.subscribe<ShowMessageEvent>(this) {
             showMessage(it.message)
-        })
+        }
     }
 
     override fun onDestroy() {

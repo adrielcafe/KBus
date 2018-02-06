@@ -1,7 +1,7 @@
 [![Release](https://jitpack.io/v/adrielcafe/KBus.svg)](https://jitpack.io/#adrielcafe/KBus) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-KBus-green.svg?style=flat)]( https://android-arsenal.com/details/1/6583)
 
 # KBus
-Super lightweight (14 LOC) and minimalistic (`post()`, `subscribe()`, `unsubscribe()`) EventBus written with idiomatic Kotlin and RxJava 2
+Super lightweight (13 LOC) and minimalistic (`post()`, `subscribe()`, `unsubscribe()`) EventBus written with idiomatic Kotlin and RxJava 2
 
 ## KBus in 3 steps
 
@@ -18,12 +18,12 @@ class OtherEvent
 ```kotlin
 override fun onStart() {
     super.onStart()
-    KBus.subscribe<ShowMessageEvent>(this, {
+    KBus.subscribe<ShowMessageEvent>(this) {
         showMessage(it.message)
-    })
-    KBus.subscribe<OtherEvent>(this, {
+    }
+    KBus.subscribe<OtherEvent>(this) {
         doSomething()
-    })
+    }
 }
 
 override fun onStop() {
@@ -43,9 +43,9 @@ If you want to post events between Activities/Fragments just subscribe in `onCre
 ```kotlin
 override fun onPostCreate(savedInstanceState: Bundle?) {
     super.onPostCreate(savedInstanceState)
-    KBus.subscribe<ShowMessageEvent>(this, {
+    KBus.subscribe<ShowMessageEvent>(this) {
         showMessage(it.message)
-    })
+    }
 }
 
 override fun onDestroy() {

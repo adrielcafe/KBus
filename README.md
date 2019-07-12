@@ -66,7 +66,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
-    implementation 'com.github.adrielcafe:KBus:1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+    implementation 'com.github.adrielcafe:KBus:1.1'
 }
 ```

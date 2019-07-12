@@ -1,0 +1,6 @@
+root = true
+
+[*.{gradle,xml,properties,java,kt,kts,xml,kt.spec,kts.spec}]
+charset = utf-8
+max_line_length = 120
+end_of_line = lf
